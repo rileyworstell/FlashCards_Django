@@ -1,0 +1,52 @@
+h1 {
+    color: orange;
+}
+.FlashCard {
+
+    margin: auto;
+    border: 1px solid black;
+    height: 10em;
+    width: 8em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #A9A9A9;
+    color: white;
+    font-style: bold;
+    font-size: 2em;
+    margin-top: 20px;
+    border-radius: 20px;
+
+}
+
+.inNav {
+    color: white;
+    background-color: transparent;
+    border: 0;
+
+}
+.CreateTitle {
+
+    text-align: center;
+  
+   
+}
+.question {
+    padding-top: 10px;
+  /* position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) */
+}
+.answer {
+    padding-top: 10px;
+   /* position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) */
+}
+
+.center {
+text-align: center;
+}

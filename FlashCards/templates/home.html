@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+ 
+    {% block content %}
+
+    <br>    
+    
+    {% if user.is_authenticated %}
+    <div class="container center">
+    <a class="btn btn-primary" href="{% url 'createCard' %}">Create Flash Cards</a>
+</div>
+   
+    <div class="container top1">
+      
+        {% for card in cards %}
+        <div class="FlashCard"><div class="question">{{ card.question }}</div> <div class="answer">{{ card.answer }}</div>
+    </div>
+    {% endfor %}
+    </div>
+    {% else %}
+
+    {% endif %}
+
+
+    <script>
+        $(".answer").hide();
+        $("div.FlashCard").each(function() {
+            $(this).click(function() {
+                
+                
+                $(this).children('.question').toggle();
+                $(this).children('.answer').toggle();
+               
+            });
+        });
+
+//$(document).ready(function(){
+ //   $(".answer").hide()
+ // $(".FlashCard").click(function(){
+  //  $(".question").fadeToggle()
+   // $(".answer").fadeToggle()
+    
+  //});
+  //});
+    </script>
+    {% endblock %}
